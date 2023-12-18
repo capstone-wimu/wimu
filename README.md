@@ -1,3 +1,6 @@
+![image](https://github.com/capstone-wimu/wimu/assets/92669789/283835fe-ee11-402a-9aa1-415c6b6ea2d4)# WIM-U APP
+![image](https://github.com/capstone-wimu/wimu/assets/92669789/eb14d0cb-04a1-485d-8829-a9010bb90d69)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
