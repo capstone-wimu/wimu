@@ -1,27 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow: auto;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  transform: scale(1.6);
+}
+
+.button {
+  @apply text-center p-3 rounded-full;
+}
+
+.btn-primary {
+  @apply bg-black font-bold text-white;
+}
+
+.btn-secondary {
+  @apply bg-white font-bold text-black border border-black;
+}
+
+.btn-link {
+  @apply text-xl text-black bg-transparent max-w-fit;
+}
+
+.btn-link:hover {
+  animation: btn-link-hover 0.4s ease-in-out normal forwards;
+}
+
+@keyframes btn-link-hover {
+  0% {
+    @apply bg-transparent;
+  }
+  100% {
+    @apply bg-opacity-10 bg-gray-600;
+  }
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
